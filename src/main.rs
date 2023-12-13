@@ -5,6 +5,7 @@ use std::io::Write;
 
 const URL: &str = "https://www.imdb.com/chart/top/";
 
+// Output file name
 const FILE_NAME: &str = "movies.csv";
 
 fn main() {
