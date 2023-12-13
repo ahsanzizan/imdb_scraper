@@ -17,10 +17,10 @@ fn main() {
     let document = Html::parse_document(&response);
 
     let title_selector =
-        Selector::parse(".titleColumn > a").expect("Failed to create the title selector");
+        Selector::parse(".ipc-title__text").expect("Failed to create the title selector");
 
     let rating_selector =
-        Selector::parse(".ratingColumn > strong").expect("Failed to create the rating selector");
+        Selector::parse(".ratingGroup--imdb-rating").expect("Failed to create the rating selector");
 
     let mut movies: Vec<(String, String)> = Vec::new();
 
